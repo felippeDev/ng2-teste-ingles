@@ -1,0 +1,47 @@
+<div class="painel-wrapper container">
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <app-progresso [progresso]="progresso"></app-progresso>
+        </div>
+
+        <div class="col-md-6">
+          <div class="d-flex justify-content-end">
+            <app-tentativas [tentativas]="tentativas"></app-tentativas>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div class="col">
+
+          <h6>{{instrucao}}</h6>
+          <p class="lead">{{rodadaFrase.fraseEng}}</p>
+          
+          <div class="form-group">
+            <textarea class="form-control" rows="4" (input)="atualizaResposta($event)" [value]="resposta"></textarea>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div class="col">
+
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-primary" (click)="verificarResposta()">Enviar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

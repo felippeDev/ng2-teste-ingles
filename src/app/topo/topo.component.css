@@ -1,0 +1,10 @@
+.navbar {
+  background: #1976d2;
+}
+
+a.navbar-brand , 
+a.navbar-brand:hover, 
+a.navbar-brand:active, 
+a.navbar-brand:visited {
+  color: #ffffff;
+}
